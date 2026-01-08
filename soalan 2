@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int total;
+    printf("Enter total purchase: ");
+    scanf("%d", &total);
+
+    if(total > 100){
+        printf("You get a discount!");
+    }
+
+    return 0;
+}
