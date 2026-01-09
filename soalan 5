@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int staff;
+    int level;
+
+    printf("Are you staff? (1 yes, 0 no): ");
+    scanf("%d", &staff);
+
+    if(staff == 1){
+        printf("Enter access level: ");
+        scanf("%d", &level);
+
+        if(level >= 5){
+            printf("Access granted");
+        }
+        else{
+            printf("Access denied: insufficient level");
+        }
+    }
+    else{
+        printf("Access denied: staff only");
+    }
+
+    return 0;
+}
